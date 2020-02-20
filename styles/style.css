@@ -1,0 +1,63 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+input {
+    padding: 0;
+    margin-top: 25px;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    width: 385px;
+    height: 22px;
+}
+
+.card {
+    width: 481px;
+    height: 392px;
+    background: #F7F5F9;
+    border-radius: 12px;
+}
+
+.form {
+    margin: 0 40px 40px 40px;
+    flex-direction: column;
+    display: flex;
+}
+
+.title {
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 20px;
+}
+
+.input {
+    padding: 13px 0 13px 15px;
+    background: #FFFFFF;
+    box-shadow: 0 7px 64px rgba(0, 0, 0, 0.07);
+    border-radius: 6px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+
+    color: #D0C9D6;
+}
+
+.submit {
+    width: 400px;
+    height: 48px;
+    margin-top: 25px;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #6979F8;
+    border-radius: 6px;
+}
