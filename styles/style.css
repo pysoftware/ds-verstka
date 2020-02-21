@@ -72,3 +72,10 @@ input:focus {
     background: #6979F8;
     border-radius: 6px;
 }
+
+.errors {
+    color: red;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+}

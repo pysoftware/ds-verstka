@@ -10,9 +10,9 @@
     <script defer src="validation.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script
-        src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous"></script>
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
     <title>Форма связи</title>
 </head>
 <body>
@@ -20,11 +20,14 @@
     <div class="card">
         <p id="title" class="title">Задать вопрос</p>
         <form class="form" id="form">
-            <input type="text" class="input" name="name" placeholder="Фамилия Имя Отчество *">
-            <input type="number" class="input" name="phone" placeholder="Телефон *">
-            <input type="email" class="input" name="email" placeholder="Email">
+            <input type="text" onchange="validateName(this.value)" class="input" name="name"
+                   placeholder="Фамилия Имя Отчество *" id="name">
+            <input type="text" onchange="validatePhone(this.value)" class="input" name="phone" placeholder="Телефон *" id="number">
+            <input type="text" onchange="validateEmail(this.value)" class="input" name="email" placeholder="Email"
+                   id="email">
             <input type="submit" class="submit" value="ОТПРАВИТЬ ЗАПРОС">
         </form>
+        <div id="errors" class="errors"></div>
     </div>
 </div>
 </body>
