@@ -6,12 +6,19 @@
 }
 
 input {
+    transform: scale(1);
     padding: 0;
     margin-top: 25px;
     font-family: 'Roboto', sans-serif;
     border: none;
     width: 385px;
     height: 22px;
+}
+
+input:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .card {
@@ -48,6 +55,10 @@ input {
     line-height: 20px;
 
     color: #D0C9D6;
+}
+
+input:focus {
+    color: #000000;
 }
 
 .submit {
